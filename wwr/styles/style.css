@@ -54,8 +54,8 @@ nav a:hover{
     color: white;
 }
 .book, .join{
-    background-color: #427AA1;
-    color: white;
+    background-color: #EBF2FA;
+    color: #427AA1;
     text-decoration: none;
     font-size: 18px;
     padding: 15px 30px;
