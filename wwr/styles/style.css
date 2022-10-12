@@ -28,7 +28,7 @@ h2{
 }
 h4{
     color: #427AA1;
-    font-family: "Rock Salt", "Cuprum";
+    font-family: "Rock Salt", "Cuprum", sans-serif;
 }
 header{
     background-color: #EBF2FA;
@@ -40,7 +40,7 @@ main section img{
     box-sizing: border-box;
 }
 main section h2{
-    font-family: "Rock Salt", "Cuprum";
+    font-family: "Rock Salt", "Cuprum", sans-serif;
     color: #427AA1;
 }
 nav a{
@@ -53,16 +53,13 @@ nav a:hover{
     background-color: #A5BE00;
     color: white;
 }
-p{
-    padding: 1em;
-}
 .book, .join{
     background-color: #EBF2FA;
     color: #427AA1;
     text-decoration: none;
-    font-family: "Rock Salt", "Cuprum";
+    font-family: "Rock Salt", "Cuprum", sans-serif;
     font-size: 18px;
-    padding: 11px 30px;
+    padding: 15px 30px;
     margin-top: 50px;
     border-radius: 5px;
 }
@@ -78,7 +75,7 @@ p{
 }
 .home-title{
     color: #427AA1;
-    font-family: "Rock Salt", "Cuprum";
+    font-family: "Rock Salt", "Cuprum", sans-serif;
     font-size: 2em;
     margin-top: 10px;
 }
@@ -91,18 +88,18 @@ p{
 }
 .msg{
     background-color: #EBF2FA;
-    font-family: "Rock Salt", "Cuprum";
+    font-family: "Rock Salt", "Cuprum", sans-serif;
     line-height: 1.5em;
     padding: 35px;
 }
 .msg h2{
     color: #427AA1;
-    font-family: "Rock Salt", "Cuprum";
+    font-family: "Rock Salt", "Cuprum", sans-serif;
 }
 .msg p{
     background-color: #427AA1;
     color: white;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: .8em;
     padding-bottom: 15px;
 }
@@ -124,7 +121,7 @@ footer a:hover{
 }
 footer p {
     font-size: 1.2em;
-    font-family: "Open Sans", sans-serif;
+    font-family: "Open Sans", Helvetica, sans-serif;
 }
 footer p a:hover {
     text-decoration: underline;
