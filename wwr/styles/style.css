@@ -53,9 +53,6 @@ nav a:hover{
     background-color: #A5BE00;
     color: white;
 }
-p{
-    font-family: "Open Sans", sans-serif;
-}
 .book, .join{
     background-color: #EBF2FA;
     color: #427AA1;
@@ -63,7 +60,7 @@ p{
     font-family: "Rock Salt", "Cuprum";
     font-size: 18px;
     padding: 11px 30px;
-    margin-top: 40px;
+    margin-top: 50px;
     border-radius: 5px;
 }
 .book:hover, .join:hover{
@@ -113,11 +110,11 @@ footer{
     background-color: #EBF2FA;
     color: black;
     margin-top: 200px;
+    padding: 25px 50px;
 }
 footer a{
     color: #427AA1;
     text-decoration: none;
-    padding: 25px 50px;
 }
 footer a:hover{
     color: #A5BE00;
