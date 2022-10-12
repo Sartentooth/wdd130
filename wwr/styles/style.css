@@ -53,6 +53,9 @@ nav a:hover{
     background-color: #A5BE00;
     color: white;
 }
+p{
+    padding: 1em;
+}
 .book, .join{
     background-color: #EBF2FA;
     color: #427AA1;
