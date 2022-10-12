@@ -19,6 +19,7 @@
 }
 body{
     background-color: #EBF2FA;
+    font-family: "Open Sans", Helvetica, sans-serif;
     font-size: 22px;
     margin: 0;
     padding: 0;
@@ -28,7 +29,6 @@ h2{
 }
 h4{
     color: #427AA1;
-    font-family: "Rock Salt", "Cuprum", sans-serif;
 }
 header{
     background-color: #EBF2FA;
@@ -57,7 +57,6 @@ nav a:hover{
     background-color: #EBF2FA;
     color: #427AA1;
     text-decoration: none;
-    font-family: "Rock Salt", "Cuprum", sans-serif;
     font-size: 18px;
     padding: 15px 30px;
     margin-top: 50px;
@@ -88,7 +87,6 @@ nav a:hover{
 }
 .msg{
     background-color: #EBF2FA;
-    font-family: "Rock Salt", "Cuprum", sans-serif;
     line-height: 1.5em;
     padding: 35px;
 }
