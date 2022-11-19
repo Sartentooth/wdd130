@@ -1,9 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
 
 .content {
-    width: 1600px;
-    
-    margin: auto;
+    max-width: 1600px;
+    margin: 0 auto;
 }
 body{
     margin: auto;
@@ -109,22 +108,24 @@ header{
     border: 3px solid #717171;
   }
   
-  .tittle {
+  .title {
     justify-self: start;
     align-self: center;
-    grid-area: 2 / 6 / 3 / 10;
+    grid-area: 2 / 6 / 3 / 10;;
     width: 640px;
     height: 120px;
-    font-weight: bold;
+    font-size: 50px;
+    
     color: #DFD5A5;
   }
-  .tittle-swap {
-    justify-self: start;
-    align-self: center;
+  .title-swap {
+
+    justify-self: center;
+    align-self:center;
     grid-area: 2 / 2 / 3 / 5;
     width: 640px;
-    height: 120px;
-    font-weight: bold;
+    height: 100px;
+    font-size: 50px;    
     color: #DFD5A5;
   }
   
@@ -134,16 +135,16 @@ header{
     font-size: 18px;
     grid-area: 3 / 6 / 5 / 11;
     width: 640px;
-    height: 240px;
+    height: 370px;
     color: #DFD5A5;
   }
   .text-swap {
-    justify-self: start;
-    align-self: center;
+    justify-self: center;
+    align-self: stretch;
     font-size: 18px;
     grid-area: 3 / 2 / 5 / 5;
     width: 640px;
-    height: 270px;
+    height: 370px;
     color: #DFD5A5;
   }
   
@@ -162,7 +163,7 @@ img {vertical-align: middle;}
     height: 960px;
     left: 0px;
     top: 12px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 /* Next & previous buttons */
@@ -181,14 +182,35 @@ img {vertical-align: middle;}
     user-select: none;
 }
 
+.prev-sys, .next-sys {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: 450px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
 /* Position the "next button" to the right */
 .next {
-    right: 0;
+    right: 0px;
     border-radius: 3px 0 0 3px;
 }
-
+.next-sys {
+    right: 151px;
+    border-radius: 3px 0 0 3px;
+}
 /* On hover, add a black background color with a little bit see-through */
 .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.prev-sys:hover, .next-sys:hover {
     background-color: rgba(0,0,0,0.8);
 }
 
@@ -215,11 +237,12 @@ img {vertical-align: middle;}
     text-align: center;
     z-index: 1;
 }
+
 .register-two {
     padding: 8px 12px;
     position: absolute;
     align-self: center;
-    left: 730px;
+    left: 720px;
     right: 0 auto;
     bottom: 160px;
     z-index: 1;
@@ -227,18 +250,6 @@ img {vertical-align: middle;}
 .register-two:hover {
     background-color: #373E40;
     color: #DFD5A5;
-}
-
-/* The dots/bullets/indicators */
-.dot {
-    cursor: pointer;
-    height: 15px;
-    width: 15px;
-    margin: 0px 2px;
-    background-color: #bbb;
-    border-radius: 50%;
-    display: inline-block;
-    transition: 0.6s ease;
 }
 
 .active, .dot:hover {
@@ -256,6 +267,111 @@ img {vertical-align: middle;}
   to {opacity: 1}
 }
 /* END SLICESHOW HERO*/
+
+/* SYSTEM PAGE*/
+
+.system-container {  
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 0.5fr 1fr;
+    width: 1600px;
+    height: 784px;
+    margin: 0 auto;
+    margin-top: 274px;
+    margin-bottom: 274px;
+    background-color: #373E40;
+  }
+  
+.system-content {
+    display: grid;
+    grid-template-columns: repeat(10, 160px);
+    grid-template-rows: repeat(5, 1fr);    
+    width: 1600px;
+    height: 600px;
+    margin: auto;
+    margin-bottom: 276px;
+    background-color: #373E40;
+}
+
+.system-title {
+    justify-self: center;
+    align-self: center;
+    grid-area: 1 / 1 / 2 / 3;
+    width: 1600px;
+    height: 344px;
+    padding-left: 80px;
+    padding-top: 100px;
+    font-size: 50px;
+    margin: 0 auto;
+    color: #DFD5A5;
+
+}
+  
+.system-slideshow {
+    justify-self: center;
+    align-self: center;
+    grid-area: 2 / 1 / 3 / 3;
+    width: 1600px;
+    height: 440px;
+    margin: auto;
+}
+
+.content-images {
+    grid-area: 1 / 1 / 6 / 11;
+}
+/* END SYSTEM PAGE*/
+
+/* TAVERN PAGE*/
+
+/* END TAVERN PAGE*/
+.tavern-container {  display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(3, 0.5fr) repeat(7, 1fr);
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    width: 1600px;
+    height: 1282px;
+    margin-bottom: 12px;
+    background-color: #373E40;
+  }
+  
+  .tavern-images {
+    justify-self: center;
+    align-self: center;
+    grid-area: 5 / 6 / 10 / 11;
+    width: 830px;
+    height: 740px;
+  }
+  
+  .tavern-title {
+    justify-self: center;
+    align-self: center;
+    grid-area: 2 / 4 / 3 / 8;
+    font-size: 40px;
+    font-weight: bold;
+    color: #DFD5A5;
+  }
+  
+  .tavern-sub-title {
+    justify-self: center;
+    align-self: center;
+    grid-area: 3 / 3 / 4 / 9;
+    font-size: 20px;
+    font-weight: lighter;
+    color: #DFD5A5;
+  }
+  
+  .tavern-text {
+    justify-self: start;
+    align-self: center;
+    grid-area: 6 / 2 / 9 / 5;
+    width: 622px;
+    height: 480px;
+    color: #DFD5A5;
+  }
+  
+
+
 
 /* FOOTER */
 
