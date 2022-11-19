@@ -3,9 +3,8 @@
 #content {
     position: relative;
     width: 1680px;
-    height: 2767px;
     margin: 0 auto;
-    background: #77878B;
+
 }
 
 body{
@@ -20,6 +19,7 @@ body{
     justify-self: center;
     align-self: center;
 }
+
 .logo {
     width: 100px;
 }
@@ -49,9 +49,8 @@ nav {
 nav a:link, nav a:visited {
     color: #DFD5A5;
 }
-
-.register{
-    display: inline-block;
+/* class button*/
+button{
     font-weight: bold;
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     margin: 10px 80px 10px 20px;
@@ -60,17 +59,133 @@ nav a:link, nav a:visited {
     color: black;
     background-color: #DFD5A5;
 }
+
+.register{
+    display: inline-block;
+}
+
 .register:hover{
     background-color: #373E40;
     color: #DFD5A5;
 }
+
 header{
     display: grid;
     grid-template-columns: 280px auto;
     background-color: #305252;
 }
 
+/* SLICESHOW HERO*/
+* {box-sizing: border-box}
+body {font-family: 'Source Sans Pro', Helvetica, sans-serif; margin:0}
+.mySlides {display: none}
+img {vertical-align: middle;}
 
+/* Slideshow container */
+.slideshow-container {
+    position: relative;
+    width: 1680px;
+    height: 960px;
+    margin-left: 0px;
+    margin-top: 12px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+}
+
+.msg {
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 246px;
+    text-align: center;
+    z-index: 1;
+}
+
+.msg-sub {
+    color: white;
+    font-size: 25px;
+    font-style: italic;
+    padding: 8px 12px;
+    position: absolute;
+    width: 100%;
+    bottom: 220px;
+    text-align: center;
+    z-index: 1;
+}
+.register-two {
+    padding: 8px 12px;
+    position: absolute;
+    left: 750px;
+    right: 744px;
+    bottom: 160px;
+    z-index: 1;
+}
+.register-two:hover {
+    background-color: #373E40;
+    color: #DFD5A5;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+    background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+/* END SLICESHOW HERO*/
+
+/*MAIN*/
+
+/*END OF MAIN*/
+
+/* FOOTER */
 footer{
     margin-top: 2268px;
     background: #373E40;
@@ -79,15 +194,14 @@ footer{
 .social {
     display: grid; 
     grid-template-columns: repeat(10, 1fr); 
-    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr; 
-    gap: 0px 0px; 
-    justify-content:stretch; 
+    grid-template-rows: 1fr 0.5fr 0.5fr 0.5fr;  
+    justify-content:space-around; 
     align-content: center; 
     justify-items:center; 
     align-items: center; 
     width: 1680px; 
     height: 501px;
-  }
+}
   
 .facebook-box{ 
     grid-area: 3 / 4 / 4 / 5;
@@ -98,11 +212,11 @@ footer{
 }
 
 .twitter-box{ 
-    grid-area: 3 / 6 / 4 / 7; 
+    grid-area: 3 / 6 / 4 / 7;
 }
 
 .linkedin-box{ 
-    grid-area: 3 / 7 / 4 / 8; 
+    grid-area: 3 / 7 / 4 / 8;
 }
 
 .copyright { 
@@ -165,3 +279,4 @@ footer{
     text-decoration: none;
     color: #DFD5A5;
 }
+/* END OF FOOTER*/
