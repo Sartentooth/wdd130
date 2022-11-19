@@ -1,17 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;900&display=swap');
 
-#content {
-    position: relative;
-    width: 1680px;
-    margin: 0 auto;
-
+.content {
+    width: 1600px;
+    
+    margin: auto;
 }
-
 body{
+    margin: auto;
     font-family: 'Source Sans Pro', Helvetica, sans-serif;
     background: #77878B;
-    margin: 0;
-    padding: 0;
+    
 }
 
 #logo_link{
@@ -57,6 +55,7 @@ button{
     width: 130px;
     height: 40px;
     color: black;
+    border-radius: 5px;
     background-color: #DFD5A5;
 }
 
@@ -75,19 +74,95 @@ header{
     background-color: #305252;
 }
 
+.content-one {  
+    display: grid;
+    grid-template-columns: repeat(10, 160px);
+    grid-template-rows: repeat(5, 1fr);    
+    width: 1600px;
+    height: 600px;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    background-color: #373E40;
+  }
+  
+  .images {
+    justify-self:center;
+    align-self: center;
+    grid-area: 2 / 2 / 5 / 5;
+    width: 480px;
+    height: 360px;
+  }
+  .images-swap {
+    justify-self:center;
+    align-self: center;
+    grid-area: 2 / 7 / 5 / 10;
+    width: 480px;
+    height: 360px;
+  }
+
+  .images img{  
+    border: 3px solid #717171;
+  }
+
+  .images-swap img {
+    border: 3px solid #717171;
+  }
+  
+  .tittle {
+    justify-self: start;
+    align-self: center;
+    grid-area: 2 / 6 / 3 / 10;
+    width: 640px;
+    height: 120px;
+    font-weight: bold;
+    color: #DFD5A5;
+  }
+  .tittle-swap {
+    justify-self: start;
+    align-self: center;
+    grid-area: 2 / 2 / 3 / 5;
+    width: 640px;
+    height: 120px;
+    font-weight: bold;
+    color: #DFD5A5;
+  }
+  
+  .text {
+    justify-self: start;
+    align-self: center;
+    font-size: 18px;
+    grid-area: 3 / 6 / 5 / 11;
+    width: 640px;
+    height: 240px;
+    color: #DFD5A5;
+  }
+  .text-swap {
+    justify-self: start;
+    align-self: center;
+    font-size: 18px;
+    grid-area: 3 / 2 / 5 / 5;
+    width: 640px;
+    height: 270px;
+    color: #DFD5A5;
+  }
+  
+
+
 /* SLICESHOW HERO*/
-* {box-sizing: border-box}
-body {font-family: 'Source Sans Pro', Helvetica, sans-serif; margin:0}
+*{box-sizing: border-box}
+body {font-family: 'Source Sans Pro', Helvetica, sans-serif; margin: 0}
 .mySlides {display: none}
 img {vertical-align: middle;}
 
 /* Slideshow container */
 .slideshow-container {
     position: relative;
-    width: 1680px;
+    width: 1600px;
     height: 960px;
-    margin-left: 0px;
-    margin-top: 12px;
+    left: 0px;
+    top: 12px;
+    margin: 0 auto;
 }
 
 /* Next & previous buttons */
@@ -143,8 +218,9 @@ img {vertical-align: middle;}
 .register-two {
     padding: 8px 12px;
     position: absolute;
-    left: 750px;
-    right: 744px;
+    align-self: center;
+    left: 730px;
+    right: 0 auto;
     bottom: 160px;
     z-index: 1;
 }
@@ -158,11 +234,11 @@ img {vertical-align: middle;}
     cursor: pointer;
     height: 15px;
     width: 15px;
-    margin: 0 2px;
+    margin: 0px 2px;
     background-color: #bbb;
     border-radius: 50%;
     display: inline-block;
-    transition: background-color 0.6s ease;
+    transition: 0.6s ease;
 }
 
 .active, .dot:hover {
@@ -181,16 +257,8 @@ img {vertical-align: middle;}
 }
 /* END SLICESHOW HERO*/
 
-/*MAIN*/
-
-/*END OF MAIN*/
-
 /* FOOTER */
-footer{
-    margin-top: 2268px;
-    background: #373E40;
-    
-}
+
 .social {
     display: grid; 
     grid-template-columns: repeat(10, 1fr); 
@@ -199,8 +267,10 @@ footer{
     align-content: center; 
     justify-items:center; 
     align-items: center; 
-    width: 1680px; 
+    width: 1600px; 
     height: 501px;
+    margin: 0 auto;
+    background-color: #373E40;
 }
   
 .facebook-box{ 
