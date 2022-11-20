@@ -319,6 +319,17 @@ img {vertical-align: middle;}
 .content-images {
     grid-area: 1 / 1 / 6 / 11;
 }
+
+.para-text{
+    width: 1000px;
+    height: auto;
+    margin:auto;
+    margin-top: -200px;
+    margin-bottom: 50px;
+    text-align: justify;
+    font-size: 25px;
+    color: #DFD5A5;
+}
 /* END SYSTEM PAGE*/
 
 /* TAVERN PAGE*/
@@ -370,7 +381,11 @@ img {vertical-align: middle;}
     color: #DFD5A5;
   }
   
-
+.pnj{
+    margin-top: -50px;
+    margin-left: 100px;
+    z-index: 2;
+}
 
 
 /* FOOTER */
