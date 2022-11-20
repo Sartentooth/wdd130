@@ -316,9 +316,10 @@ img {vertical-align: middle;}
     margin: auto;
 }
 
-.content-images {
+.content-images, .tavern-image{
     grid-area: 1 / 1 / 6 / 11;
 }
+
 
 .para-text{
     width: 1000px;
@@ -334,19 +335,26 @@ img {vertical-align: middle;}
 
 /* TAVERN PAGE*/
 
-/* END TAVERN PAGE*/
-.tavern-container {  display: grid;
+.tavern-container {  
+    display: grid;
     grid-template-columns: repeat(10, 1fr);
     grid-template-rows: repeat(3, 0.5fr) repeat(7, 1fr);
-    gap: 0px 0px;
-    grid-auto-flow: row;
     width: 1600px;
     height: 1282px;
     margin-bottom: 12px;
     background-color: #373E40;
   }
-  
-  .tavern-images {
+
+.tavern-content{
+    display: grid;
+    justify-self: center;
+    align-self: center;
+    margin: auto;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+.tavern-images {
     justify-self: center;
     align-self: center;
     grid-area: 5 / 6 / 10 / 11;
@@ -357,6 +365,7 @@ img {vertical-align: middle;}
   .tavern-title {
     justify-self: center;
     align-self: center;
+    text-align: justify;
     grid-area: 2 / 4 / 3 / 8;
     font-size: 40px;
     font-weight: bold;
@@ -366,27 +375,25 @@ img {vertical-align: middle;}
   .tavern-sub-title {
     justify-self: center;
     align-self: center;
+    text-align: justify;
     grid-area: 3 / 3 / 4 / 9;
-    font-size: 20px;
-    font-weight: lighter;
+    font-size: 25px;
+    font: weight 50px;
+    margin-left: 50px;
     color: #DFD5A5;
   }
   
   .tavern-text {
     justify-self: start;
     align-self: center;
+    text-align: justify;
     grid-area: 6 / 2 / 9 / 5;
     width: 622px;
     height: 480px;
+    font-size: 25px;
     color: #DFD5A5;
   }
   
-.pnj{
-    margin-top: -50px;
-    margin-left: 100px;
-    z-index: 2;
-}
-
 
 /* FOOTER */
 
