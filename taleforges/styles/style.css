@@ -16,6 +16,11 @@ body{
     justify-self: center;
     align-self: center;
 }
+#logo_link_2{
+    padding: 5px;
+    justify-self: center;
+    align-self: center;
+}
 
 .logo {
     width: 100px;
@@ -243,7 +248,7 @@ img {vertical-align: middle;}
     position: absolute;
     align-self: center;
     left: 720px;
-    right: 0 auto;
+    right: auto;
     bottom: 160px;
     z-index: 1;
 }
@@ -378,7 +383,7 @@ img {vertical-align: middle;}
     text-align: justify;
     grid-area: 3 / 3 / 4 / 9;
     font-size: 25px;
-    font: weight 50px;
+    font-weight: lighter;
     margin-left: 50px;
     color: #DFD5A5;
   }
