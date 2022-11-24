@@ -278,7 +278,7 @@ img {vertical-align: middle;}
     height: 784px;
     margin: 0 auto;
     margin-top: 274px;
-    margin-bottom: 274px;
+    margin-bottom: 394px;
     background-color: #373E40;
   }
   
@@ -289,7 +289,7 @@ img {vertical-align: middle;}
     width: 1600px;
     height: 600px;
     margin: auto;
-    margin-bottom: 276px;
+    margin-bottom: 274px;
     background-color: #373E40;
 }
 
@@ -362,7 +362,7 @@ img {vertical-align: middle;}
     height: 740px;
   }
   
-  .tavern-title {
+.tavern-title {
     justify-self: center;
     align-self: center;
     text-align: justify;
@@ -372,7 +372,7 @@ img {vertical-align: middle;}
     color: #DFD5A5;
   }
   
-  .tavern-sub-title {
+.tavern-sub-title {
     justify-self: center;
     align-self: center;
     text-align: justify;
@@ -383,7 +383,7 @@ img {vertical-align: middle;}
     color: #DFD5A5;
   }
   
-  .tavern-text {
+.tavern-text {
     justify-self: start;
     align-self: center;
     text-align: justify;
